@@ -10,7 +10,7 @@ class CreateLinkRequest extends FormRequest
     {
         return [
             'title' => 'required|max:255',
-            'url' => 'required|url|unique:links',
+            'url' => 'required|url',
             'text' => '',
         ];
     }
